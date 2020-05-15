@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: black;
+  background: url('../assets/fireside.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.Signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Signup form {
+  width: 30%;
+}
+
+.Signup input {
+  font-size: 1.4em;
+  opacity: 0.6;
+  margin-top: 1em;
+  border: 1px solid #989898;
+}
+
+.Signup button {
+  font-size: 1.3em;
+  opacity: 0.8;
+  color: whitesmoke;
+  background-color: rgb(0, 68, 51);
+  border: whitesmoke;
+}
+
+.Signup button:hover {
+  opacity: 0.6;
+  color: rgb(0, 68, 51);
+  background-color: whitesmoke;
+  border: whitesmoke;
+}
+
+.Login {
+  /* background: url('../assets/fireside.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login form {
+  width: 350px;
+  position: absolute;
+  bottom: 60%;
+}
+
+.login-btns {
+  display: flex;
+  height: 50px;
+}
+
+button {
+  padding: 0 0;
+  width: 200px;
+  text-align: left;
+}
+
+button a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+button a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.Login input {
+  font-size: 1.4em;
+  opacity: 0.5;
+  margin-top: 0.6em;
+  /* color: whitesmoke; */
+}
+
+.Login .btn {
+  font-size: 1.3em;
+  opacity: 0.8;
+  color: whitesmoke;
+  background-color: rgb(25, 90, 143);
+  margin-left: 10px;
+  margin-right: 10px;
+  border: none;
+}
+
+.Login .btn a {
+  margin: 0;
+}
+
+.Signup {
+  background: url('../assets/RVLg.jpg') no-repeat center center fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* LANDING PAGE */
+.Landing {
+  background: url('../assets/TentCanyon.jpg') no-repeat center center fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: whitesmoke;
+  width: 100%;
+  height: 100%;
+}
+
+.Landing h1 {
+  margin: 2% 0 2% 0;
+  font-size: 4em;
+}
+
+.Landing h3 {
+  margin-top: 5%;
+  font-size: 2em;
+}
+
+.removeFavBtn {
+  background-color: rgb(255, 104, 104);
+  opacity: 40%;
+  color: rgba(255, 255, 255, 0.8);
+  transition: opacity 0.5s ease-in-out;
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 5px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.removeFavBtn:hover {
+  background-color: rgb(255, 0, 0);
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.btn-primary {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* QUERY PAGE */
+.Query {
+  background: url('../assets/NightCampLg.jpg') no-repeat center center fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* START: FORM PAGE STYLING */
+.Query form {
+  text-align: center;
+  color: #fff;
+  opacity: 1;
+  font-size: 1.2em;
+  color: #333;
+  max-height: 600px;
+  width: 700px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: thin double rgb(194, 87, 0);
+  border-radius: 20px;
+}
+
+.states.form-group {
+  margin-top: 2em;
+}
+
+#app > div > div > form > div > label > strong {
+  /* margin-top: 19px; */
+  /* margin-bottom: 31px; */
+  font-size: 2.5rem;
+  position: relative;
+  z-index: 99;
+  color: white;
+  word-wrap: none;
+}
+
+select#stateSelect {
+  text-align: center;
+  margin: 1rem auto;
+  font-size: 2rem;
+}
+
+#app > div > div > form > fieldset > legend > strong {
+  font-size: 2.5rem;
+}
+
+#app > div > div > form > fieldset div {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: rgba(200, 240, 215, 0.842);
+}
+
+#app > div > div > form > fieldset div:hover {
+  color: rgb(0, 138, 7);
+}
+
+input#pet,
+input#sewerHook,
+input#waterHook,
+input#waterFront {
+  height: 20px;
+  width: 20px;
+  margin: 1vh -4vw;
+}
+
+/* END: FORM PAGE STYLING */
+
+.header {
+  color: rgb(201, 201, 201);
+}
+
+.statesDrop {
+  width: 30%;
+  overflow: scroll;
+}
+
+.states {
+  display: flex;
+  flex-direction: column;
+}
+
+.QueryButton {
+  background-color: rgb(0, 70, 46);
+  border: 2px solid whitesmoke;
+  font-size: 1.1em;
+}
+
+.QueryButton:hover {
+  background-color: whitesmoke;
+  color: rgb(0, 70, 46);
+  border: 2px solid rgb(0, 70, 46);
+}
+
+.Results {
+  background: url('../assets/LakeHouseLg.jpg') no-repeat center center fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Results h1 {
+  color: rgb(236, 234, 234);
+  font-size: 3.5em;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  opacity: 0.8;
+}
+
+.returnHome {
+  position: fixed;
+  top: 0;
+  right: 0;
+  font-size: 1.2em;
+  margin-top: 2%;
+  margin-right: 4%;
+  background-color: whitesmoke;
+  opacity: 0.8;
+}
+
+table {
+  width: 60%;
+  overflow: scroll;
+  background-color: rgba(134, 134, 134, 0.4);
+}
+
+thead {
+  color: whitesmoke;
+  font-size: 1.5em;
+  /* opacity: 0.9; */
+}
+
+.CampRow {
+  color: whitesmoke;
+  font-size: 1.2em;
+}
+
+.findMore {
+  font-size: 1.2em;
+  opacity: 0.8;
+}
+
+td button {
+  width: 20px;
+}
+
+td .form-check-input {
+  margin-left: 3%;
+  background-color: rgba(255, 255, 255, 0.199);
+}
+
+/* Weather stuff */
+.getWeather {
+  background-color: rgb(255, 104, 104);
+  color: rgba(255, 255, 255, 0.8);
+  transition: opacity 0.5s ease-in-out;
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 5px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.modal-content {
+  width: 800px;
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border: thin double #32a1ce;
+}
+
+.weather-container {
+  display: flex;
+  flex-grow: auto;
+  flex-wrap: wrap;
+  width: 800px;
+  padding: 5px;
+  margin: 15px;
+}
+
+.card.text-white.card-body {
+  background: #333;
+  height: auto;
+  margin: 10px;
+  height: 250px;
+  width: 150px;
+  color: orange;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.card.text-white.card-body:hover {
+  transform: scale(1.1);
+}
+
+.card-title {
+  font-weight: 900;
+  color: orange;
+}
+
+body > div.fade.modal.show > div > div > center {
+  font-weight: 900;
+  color: #333;
+  font-size: 50px;
+}
+
+/* this is the styling for the close button on the weather  */
+body > div.fade.modal.show > div > div > button {
+  font-weight: 600;
+  color: red;
+  padding-left: 9px;
+  font-size: 20px;
+  border-radius: 20px;
+  height: 40px;
+  width: 80px;
+  opacity: 0.5;
+}
+
+body > div.fade.modal.show > div > div > button:hover {
+  opacity: 1;
+}
